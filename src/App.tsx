@@ -80,7 +80,8 @@ const App: React.FC = () => {
 
     return (
         <div className="menu-order">
-
+            <Order orderItems={orderItems} removeItem={removeItem} totalPrice={totalPrice} />
+            <AddItems menuItems={menuItems} addItemToOrder={addItemToOrder} />
         </div>
     );
 };
